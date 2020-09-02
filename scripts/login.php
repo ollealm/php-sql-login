@@ -16,7 +16,7 @@ if (isset($_POST['login-submit'])) {
   // kollar om nått av fälten har lämnats tomt
   // skickar i så fall tillbaka till index med felmeddelande
   if (empty($username) || empty($password)) {
-    header("location: ./index.php?error=empty");
+    header("location: ../index.php?error=empty&user=".$username);
     exit();
   } else {
     // lagrar queryn i en variabel och använder en placeholder
@@ -57,11 +57,11 @@ if (isset($_POST['login-submit'])) {
       $_SESSION['user_name'] = $row["user_name"];
       $_SESSION['email'] = $row["email"];
       // skickar vidare till user sidan
-      header("location: ./user.php");
+      header("location: ../user.php");
       exit();
     }  else {
       // skickar tillbaka till index om lösen inte stämmer med felmeddelande
-      header("location: ./index.php?error=wrong");
+      header("location: ../index.php?error=wrong");
       exit();
     }
   }

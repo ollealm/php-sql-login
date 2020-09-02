@@ -10,5 +10,5 @@ session_unset();
 session_destroy();
 // skickar användaren till index 
 // med logout meddelande
-header("location: ./index.php?logout=true");
+header("location: ../index.php?logout=true");
 exit();

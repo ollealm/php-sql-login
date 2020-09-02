@@ -12,7 +12,7 @@
     echo "<p>Hello <strong>" . $_SESSION['user_name'] . "</strong> your email is <strong>" . $_SESSION['email'] . "</strong></p>";
     
     // logout button
-    echo '<form action="logout.php" method="post"> 
+    echo '<form action="scripts/logout.php" method="post"> 
       <button type="submit" class="btn btn-dark mt-3" name="logout-submit">Logout</button>
       </form>';
   } else {
@@ -22,8 +22,7 @@
 
 ?>
 
-</div>
 
-</body>
-
-</html>
+<?php 
+  require "footer.php"
+?>

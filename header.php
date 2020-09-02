@@ -20,6 +20,7 @@
       <a class="navbar-brand">Authentication [SQL + PHP]</a>
       <ul class="navbar-nav">
         <li class="nav-item"><a href="index.php" class="nav-link">Login</a></li>
+        <li class="nav-item"><a href="signup.php" class="nav-link">Signup</a></li>
         <li class="nav-item"><a href="user.php" class="nav-link">User</a></li>
       </ul>
     </nav>

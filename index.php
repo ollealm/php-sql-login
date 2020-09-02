@@ -6,6 +6,7 @@
 
 <?php 
 
+
 // kollar efter felmeddelanden
 // och skriver ut dessa till användaren
 if (isset($_GET['error'])) {
@@ -30,7 +31,7 @@ if (isset($_SESSION['id'])) {
 } else {
   // använder POST istället för GET för att inte visa känslig data
   echo 
-  '<form action="login.php" method="post"> 
+  '<form action="scripts/login.php" method="post"> 
     <div class="form-group">
       <input type="text" name="username" placeholder="Username" class="form-control">
     </div>
@@ -45,8 +46,6 @@ if (isset($_SESSION['id'])) {
 
 ?>
 
-</div>
-
-</body>
-
-</html>
+<?php 
+  require "footer.php"
+?>
