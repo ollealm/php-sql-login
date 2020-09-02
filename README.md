@@ -1,6 +1,6 @@
 # Authentication – PHP, SQL and Bootstrap
 
-A login page and an introduction to PHP and SQL. Procedural PHP using prepared statements, styled with Bootstrap 4.
+A login and signup page and an introduction to PHP and SQL. Procedural PHP using prepared statements, styled with Bootstrap 4.
 
 ## Core Tech
 
